@@ -1,4 +1,6 @@
-FROM node:8
+FROM node:8-alpine
+
+RUN apk add --no-cache curl jq git
 
 RUN npm install -g semantic-release @semantic-release/gitlab
 
