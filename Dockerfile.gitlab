@@ -1,5 +1,5 @@
 FROM node:8
 
-RUN npm install --save-dev semantic-release @semantic-release/gitlab
+RUN npm install -g semantic-release @semantic-release/gitlab
 
-CMD npx semantic-release --ci
+CMD semantic-release --ci
